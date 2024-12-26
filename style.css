@@ -1,0 +1,108 @@
+/* Corpo */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle, #1a1a1a, #000000);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #242530, #B0B0B3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Cards */
+.card {
+  margin: 100px auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 30px;
+  background: linear-gradient(135deg, #242530, #B0B0B3);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.7s ease-out;
+}
+.card p:hover{
+ color: #000725;
+ transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out, letter-spacing 0.3s ease-in-out;
+}
+.card h2:hover{
+ color: #000725; 
+ transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out, letter-spacing 0.3s ease-in-out; /* Transitions for font size, color, and letter-spacing */
+}
+
+.card h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.card p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Scroll Animation */
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card img{
+ border-radius: 50%;
+}
+.card img:hover{
+ height: 320;
+ transition: height 0.3s ease-in-out;
+}
+.card h3 {
+    font-size: 30px;             /* Set a default font size */
+    letter-spacing: 6px;         /* Default letter spacing */
+    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out, letter-spacing 0.3s ease-in-out; /* Transitions for font size, color, and letter-spacing */
+}
+
+.card h3:hover {
+    font-size: 40px;             /* Changes the font size to 40px when hovered */
+    letter-spacing: 0;           /* Resets the letter spacing to 0 */
+    color: #000725;              /* Changes the text color */
+}
+.card h5{
+ font-size: 16px;
+ border-radius: 30px;
+ letter-spacing: 6px;
+ color: #fff;
+}
+.card h5:hover{
+ font-size: 26;
+ color: #000725;
+ letter-spacing: 0;
+ transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out, letter-spacing 0.3s ease-in-out; /* Transitions for font size, color, and letter-spacing */
+}
